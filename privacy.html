@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — ClipFarmer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0a0a0f; --surface: #12121a; --border: #1e1e2e;
+      --accent: #7c3aed; --accent2: #06b6d4;
+      --text: #e2e8f0; --muted: #64748b;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.7; }
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1rem 2rem; border-bottom: 1px solid var(--border);
+    }
+    .logo { font-size: 1.2rem; font-weight: 900; text-decoration: none; color: var(--text); }
+    .logo span { color: var(--accent); }
+    nav a { color: var(--muted); text-decoration: none; font-size: 0.875rem; }
+    nav a:hover { color: var(--text); }
+    .prose {
+      max-width: 720px; margin: 0 auto; padding: 4rem 1.5rem 6rem;
+    }
+    .prose h1 { font-size: 2rem; font-weight: 900; margin-bottom: 0.5rem; }
+    .prose .meta { color: var(--muted); font-size: 0.875rem; margin-bottom: 3rem; }
+    .prose h2 {
+      font-size: 1.15rem; font-weight: 700; margin-top: 2.5rem; margin-bottom: 0.75rem;
+      padding-top: 2rem; border-top: 1px solid var(--border);
+    }
+    .prose h2:first-of-type { border-top: none; }
+    .prose p { color: var(--muted); margin-bottom: 1rem; }
+    .prose ul { padding-left: 1.5rem; color: var(--muted); margin-bottom: 1rem; }
+    .prose li { margin-bottom: 0.4rem; }
+    .prose a { color: var(--accent2); text-decoration: none; }
+    .prose a:hover { text-decoration: underline; }
+    .highlight {
+      background: rgba(124,58,237,0.08); border: 1px solid rgba(124,58,237,0.2);
+      border-radius: 8px; padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+    }
+    .highlight p { color: var(--text); margin: 0; font-size: 0.9rem; }
+    footer {
+      border-top: 1px solid var(--border); text-align: center;
+      padding: 2rem 1.5rem; color: var(--muted); font-size: 0.8rem;
+    }
+    footer a { color: var(--muted); text-decoration: none; margin: 0 0.5rem; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Clip<span>Farmer</span></a>
+  <a href="index.html">← Back to home</a>
+</nav>
+
+<div class="prose">
+  <h1>Privacy Policy</h1>
+  <p class="meta">Effective date: June 16, 2026 &nbsp;·&nbsp; Last updated: June 16, 2026</p>
+
+  <div class="highlight">
+    <p><strong>Summary:</strong> ClipFarmer is a single-user personal automation tool. It only accesses the TikTok account of its developer (Abdiasis Yassin Said) to publish content. It does not collect, store, or share any third-party user data.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>ClipFarmer is a personal automated content publishing pipeline developed and operated exclusively by:</p>
+  <p><strong>Abdiasis Yassin Said</strong><br>
+     Email: <a href="mailto:abdiasis33@icloud.com">abdiasis33@icloud.com</a><br>
+     Website: <a href="https://abdiasisyassin92-cyber.github.io/clipfarmer-site/">https://abdiasisyassin92-cyber.github.io/clipfarmer-site/</a>
+  </p>
+
+  <h2>2. What ClipFarmer does</h2>
+  <p>ClipFarmer is a locally-run automation tool that:</p>
+  <ul>
+    <li>Downloads royalty-free audio and video assets</li>
+    <li>Renders short-form vertical video clips using ffmpeg</li>
+    <li>Publishes the clips to TikTok, YouTube Shorts, and Instagram Reels on a scheduled basis</li>
+    <li>Retrieves basic post-performance analytics (views, likes) for internal optimisation</li>
+  </ul>
+  <p>This application is <strong>not a service offered to third parties</strong>. It is a personal tool used solely by its developer.</p>
+
+  <h2>3. Data collected through TikTok API</h2>
+  <p>ClipFarmer uses the TikTok Content Posting API. The following data is accessed:</p>
+  <ul>
+    <li><strong>Creator profile information</strong> (username, display name, avatar) — used only to confirm that the correct TikTok account is authorised before publishing</li>
+    <li><strong>Video publication capability</strong> — used to upload and post video clips on behalf of the authorised account</li>
+    <li><strong>Post status and performance metrics</strong> (views, likes, shares) — used locally to rank content hooks by performance</li>
+  </ul>
+  <p>All data retrieved through the TikTok API is processed locally on the developer's machine. No data is transmitted to any external server controlled by ClipFarmer.</p>
+
+  <h2>4. Data we do NOT collect</h2>
+  <ul>
+    <li>We do not collect data from any TikTok user other than the authorised creator account</li>
+    <li>We do not read, store, or process followers' data, comments, messages, or profile information</li>
+    <li>We do not run a database of user accounts</li>
+    <li>We do not use cookies or tracking technologies on this website</li>
+    <li>We do not share any data with advertisers or data brokers</li>
+  </ul>
+
+  <h2>5. How data is stored</h2>
+  <p>Any data retrieved from TikTok's API is stored locally on the developer's Windows machine at <code>C:\clipfarmer\</code> in local JSON and log files. This data is:</p>
+  <ul>
+    <li>Not uploaded to any cloud service</li>
+    <li>Not shared with third parties</li>
+    <li>Retained only for as long as operationally necessary</li>
+  </ul>
+
+  <h2>6. Access tokens</h2>
+  <p>TikTok OAuth access tokens and refresh tokens are stored locally in <code>config.json</code> on the developer's machine. These tokens are never logged, printed, or transmitted to any endpoint other than TikTok's official API (<code>open.tiktokapis.com</code>).</p>
+
+  <h2>7. Third-party services</h2>
+  <p>ClipFarmer interacts with the following third-party APIs:</p>
+  <ul>
+    <li><strong>TikTok</strong> — Content Posting API (<a href="https://www.tiktok.com/legal/page/global/privacy-policy/en" target="_blank" rel="noopener">TikTok Privacy Policy</a>)</li>
+    <li><strong>YouTube / Google</strong> — YouTube Data API v3 (<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>)</li>
+    <li><strong>Meta / Instagram</strong> — Graph API (<a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Meta Privacy Policy</a>)</li>
+    <li><strong>Gumroad</strong> — used for product sales; governed by <a href="https://gumroad.com/privacy" target="_blank" rel="noopener">Gumroad's Privacy Policy</a></li>
+  </ul>
+
+  <h2>8. Data deletion</h2>
+  <p>Since ClipFarmer does not collect or store any third-party user data, there is no user data to delete.</p>
+  <p>If you have any concerns or believe your data has been processed in error, please contact:</p>
+  <p><a href="mailto:abdiasis33@icloud.com">abdiasis33@icloud.com</a></p>
+  <p>All data deletion requests will be acknowledged within 30 days.</p>
+
+  <h2>9. Children's privacy</h2>
+  <p>ClipFarmer does not knowingly collect information from anyone under the age of 13. This tool is operated by a single adult developer and is not accessible to the public.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If this privacy policy is updated, the new version will be published at this URL with an updated effective date. Continued use of the TikTok API under this application constitutes acceptance of any updated terms.</p>
+
+  <h2>11. Contact</h2>
+  <p>For any privacy-related questions or data deletion requests:</p>
+  <p>
+    <strong>Abdiasis Yassin Said</strong><br>
+    <a href="mailto:abdiasis33@icloud.com">abdiasis33@icloud.com</a>
+  </p>
+</div>
+
+<footer>
+  <p>
+    <a href="index.html">Home</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="mailto:abdiasis33@icloud.com">Contact</a>
+  </p>
+  <p style="margin-top: 0.75rem;">© 2026 Abdiasis Yassin Said. ClipFarmer is a personal automation tool, not a commercial service.</p>
+</footer>
+
+</body>
+</html>
